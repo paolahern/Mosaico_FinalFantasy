@@ -42,10 +42,10 @@ class Carga extends Phaser.Scene {
         ).setOrigin(0, 0.5);
 
         // archivos a cargar
-        this.load.image("fondo", "../img/fondo.jpg");
-        this.load.image("1", "../img/1.jpg");
-        this.load.image("2", "../img/2.jpeg");
-        this.load.image("3", "../img/3.jpg");
+        this.load.image("fondo", "fondo.jpg");
+        this.load.image("1", "1.jpg");
+        this.load.image("2", "2.jpeg");
+        this.load.image("3", "3.jpg");
 
         // progreso de carga
         this.load.on("progress", (valor) => {
@@ -70,5 +70,6 @@ class Carga extends Phaser.Scene {
         });
 
     }
+
 
 }
