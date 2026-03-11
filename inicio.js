@@ -30,7 +30,7 @@ class Inicio extends Phaser.Scene {
         this.add.text(
             this.scale.width / 2,
             this.scale.height / 2 - 20,
-            "Elimina las imagenes\npara descubrir el mensaje",
+            "Elimina las imagenes\npara descubrir el mensaje",// el guion \n permite que este hacia abajo que no este todo de corrido 
             {
                 fontSize: "50px",
                 align: "center",
@@ -57,7 +57,7 @@ class Inicio extends Phaser.Scene {
             this.scene.start("Juego");
         });
 
-        // efecto hover
+        // efecto hover cuando pasas el mouse cambia de color las letras para mayor comodidad del jugador 
         boton.on("pointerover", () => {
             boton.setStyle({ color: "#7cb1ff" });
         });
@@ -69,3 +69,4 @@ class Inicio extends Phaser.Scene {
     }
 
 }
+
