@@ -1,5 +1,5 @@
 // Nombre de la caché
-const CACHE = "mosaico-cache-v2";
+const CACHE = "mosaico-cache-v3";
 
 // Archivos que se guardarán para que la app funcione instalada u offline
 const archivos = [
@@ -37,3 +37,4 @@ caches.match(event.request)
 );
 
 });
+
