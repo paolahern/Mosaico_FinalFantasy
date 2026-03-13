@@ -1,5 +1,5 @@
 // Nombre de la caché
-const CACHE = "mosaico-cache-v3";
+const CACHE = "mosaico-cache-v4";
 
 // Archivos que se guardarán para que la app funcione instalada u offline
 const archivos = [
@@ -32,9 +32,15 @@ caches.open(CACHE)
 self.addEventListener("fetch", (event) => {
 
 event.respondWith(
-caches.match(event.request)
-.then(res => res || fetch(event.request))
+fetch(event.request)
+.then(response => {
+const copia = response.clone();
+caches.open(CACHE).then(cache => cache.put(event.request, copia));
+return response;
+})
+.catch(() => caches.match(event.request))
 );
 
 });
+
 
