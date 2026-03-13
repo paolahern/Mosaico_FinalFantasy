@@ -1,3 +1,4 @@
+// escena donde ocurre el juego principal
 class Juego extends Phaser.Scene {
 
     constructor(){
@@ -148,3 +149,4 @@ for (let x = 0; x < columnas; x++){
 
 
 }
+
