@@ -1,3 +1,4 @@
+// CONFIGURACIÓN PRINCIPAL DEL JUEGO
 const config = {
 
 type: Phaser.AUTO,
@@ -7,6 +8,7 @@ height: window.innerHeight,
 
 scale:{
 mode: Phaser.Scale.FIT,
+// Centra el juego automáticamente en la pantalla
 autoCenter: Phaser.Scale.CENTER_BOTH
 },
 scene:[
@@ -15,5 +17,6 @@ scene:[
     Juego
 ]
 };
+
 
 const game = new Phaser.Game(config)
