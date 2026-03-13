@@ -1,13 +1,13 @@
 {
-"name": "Raspa y Gana",
+"name": "Mosaico",
      "_comment1": "cambio de nombre",
-"short_name": "Gravity",
+"short_name": "Final",
 "start_url": "index.html",
 "display": "standalone",
 "orientation": "landscape",
      "_comment2": "cambio de color en back y theme",
-"background_color": "#FFD700",
-"theme_color": "#FFD700",
+"background_color": "#000000",
+"theme_color": "#A8E6A3",
 
 "icons": [
     {
@@ -18,3 +18,4 @@
   ]
 
 }
+
