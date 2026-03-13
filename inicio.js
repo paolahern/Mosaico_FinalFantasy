@@ -1,3 +1,4 @@
+ // escena del menú o pantalla inicial
 class Inicio extends Phaser.Scene {
 
     constructor(){
@@ -6,7 +7,7 @@ class Inicio extends Phaser.Scene {
 
     create(){
 
-       // fondo con imagen
+       // fondo con imagen agrege esta linea que permite que el juego tenga antes de empezar un fondo 
         let fondo = this.add.image(
             this.scale.width / 2,
             this.scale.height / 2,
@@ -69,4 +70,5 @@ class Inicio extends Phaser.Scene {
     }
 
 }
+
 
