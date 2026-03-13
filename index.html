@@ -7,22 +7,30 @@
 
 <title>Ve mas alla de lo evidente</title>
 
-<!-- se agrego el manifest y borro //la carpeta del canva -->
-    <link rel="manifest" href="manifest.json">
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+<!-- Manifest para instalar la app -->
+<link rel="manifest" href="manifest.json">
 
+<!-- Librería de Phaser -->
+<script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
 
 </head>
 
 <body>
 
+<script src="carga.js"></script>
+<script src="inicio.js"></script>
+<script src="juego.js"></script>
+<script src="main.js"></script>
 
-    <script src="carga.js"></script>
-    <script src="inicio.js"></script>
-    <script src="juego.js"></script>
-    <script src="main.js"></script>
+<script>
+// Registrar el Service Worker
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./service_worker.js")
+    .then(() => console.log("Service Worker registrado"))
+    .catch(error => console.log("Error al registrar Service Worker:", error));
+}
+</script>
 
 </body>
 
 </html>
-
