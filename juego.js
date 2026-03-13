@@ -52,7 +52,7 @@ let filas = Math.floor(this.scale.height / tamaño);
 let offsetX = (this.scale.width - (columnas * tamaño)) / 2;
 let offsetY = (this.scale.height - (filas * tamaño)) / 2;
 
-// CREAR CUADRICULA CENTRADA
+// CREAR CUADRICULA CENTRADA como se va a distribuiur las imagenes tambien on el tamaño que le corresponde a cada una 
 for (let x = 0; x < columnas; x++){
 
     for (let y = 0; y < filas; y++){
@@ -69,7 +69,8 @@ for (let x = 0; x < columnas; x++){
 
         this.cubierta.add(img);
 
-                // EVENTO CLICK
+                // EVENTO CLICK permite saber si se presiono el boton y que ocasiona en este caso la suma de muntos depediendo
+                //de la imagen 
                 img.on("pointerdown", () => {
 
                     // SISTEMA DE PUNTOS
@@ -121,15 +122,16 @@ for (let x = 0; x < columnas; x++){
 
         }
 
-        // BOTON REINICIAR
+        // BOTON REINICIAR es el que esta arriba a la izquierda donde se determina
+        ///su tamaño y posicionamiento en la pantalla
         let botonReiniciar = this.add.text(
             this.scale.width - 120,
             20,
             "Reiniciar",
             {
                 fontSize: "24px",
-                backgroundColor: "#000",
-                color: "#ffffff",
+                backgroundColor: "#A8E6A3",//cambio de color
+                color: "#000",//cambio de color 
                 padding: { x: 10, y: 5 }
             }
         );
@@ -143,5 +145,6 @@ for (let x = 0; x < columnas; x++){
         });
 
     }
+
 
 }
