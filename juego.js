@@ -127,7 +127,7 @@ for (let x = 0; x < columnas; x++){
         ///su tamaño y posicionamiento en la pantalla
         let botonReiniciar = this.add.text(
             this.scale.width - 120,
-            20,
+            50,
             "Reiniciar",
             {
                 fontSize: "24px",
