@@ -42,8 +42,8 @@ class Juego extends Phaser.Scene {
             "3"
         ];
 
-// TAMAÑO DE LAS CELDAS
-let tamaño = 400;
+// TAMAÑO DE LAS CELDAS el tamaño se adapte al dispositivo y siempre haya espacio para imágenes
+let tamaño = Math.min(this.scale.width, this.scale.height) / 3;
 
 // calcular columnas y filas
 let columnas = Math.floor(this.scale.width / tamaño);
